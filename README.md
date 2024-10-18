@@ -39,7 +39,7 @@ To run the project locally using Vite, follow these steps:
    Navigate to the project directory and install the required dependencies:
 
    ```bash
-   cd creative-upaay-assignment
+   cd upaay-dashboard-design
    npm install
    ```
 
