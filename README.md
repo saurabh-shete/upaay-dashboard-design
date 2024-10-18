@@ -8,27 +8,25 @@ This project is a dashboard UI built with React.js that replicates a design prov
 ## Features
 
 1. **UI Implementation**
-   - The dashboard layout closely replicates the provided Figma design.
-   - The dashboard contains three sections: "To Do", "In Progress", and "Done" to represent the status of tasks.
-   
+- The dashboard layout closely replicates the provided Figma design.
+- The dashboard contains three sections: "To Do", "In Progress", and "Done" to represent the status of tasks.
 2. **Task Management**
-   - **Add Task**: Users can add tasks with dynamic names and descriptions.
-   - **Move Task**: Users can drag and drop tasks from one section to another (e.g., "To Do" to "In Progress").
-   
+- **Add Task**: Users can add tasks with dynamic names and descriptions.
+- **Move Task**: Users can drag and drop tasks from one section to another (e.g., "To Do" to "In Progress").
 3. **Task Filtering**
-   - Users can filter tasks based on specific criteria, such as priority, using a filter toggle button.
+- Users can filter tasks based on specific criteria, such as priority, using a filter toggle button.
 
 4. **State Management**
-   - The application uses Redux for state management, and Local Storage ensures the task data persists across page refreshes.
+- The application uses Redux for state management, and Local Storage ensures the task data persists across page refreshes.
 
 5. **Drag and Drop**
-   - Implemented drag-and-drop functionality using `react-beautiful-dnd` to move tasks between sections.
+- Implemented drag-and-drop functionality using `react-beautiful-dnd` to move tasks between sections.
 
 ---
 
 ## Setup Instructions
 
-To run the project locally, follow these steps:
+To run the project locally using Vite, follow these steps:
 
 1. **Clone the Repository**  
    Clone the GitHub repository to your local machine:
@@ -46,20 +44,14 @@ To run the project locally, follow these steps:
    ```
 
 3. **Start the Application**  
-   To start the application on a local development server:
+   To start the application on a local development server with Vite:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-   This will start the React application on `http://localhost:3000`.
+   This will start the React application on `http://localhost:5173`.
 
-4. **Run Tests (Optional)**  
-   If there are any tests included, you can run them using:
-
-   ```bash
-   npm test
-   ```
 
 ---
 
@@ -84,7 +76,6 @@ The state of the tasks is managed using Redux. The state includes three key arra
 ### Key Redux Features:
 - **Add Task**: Dispatches an action to add a new task to the `toDo` state.
 - **Move Task**: Dispatches an action to move a task from one section to another using drag-and-drop.
-- **Task Filtering**: Allows users to filter tasks based on priority. When the filter is active, tasks are sorted by their priority in descending order.
 
 ---
 
@@ -116,11 +107,11 @@ The application uses `react-beautiful-dnd` for implementing drag-and-drop functi
    Use the following command to start the local development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **View the App**  
-   Open `http://localhost:3000` in your browser to view the dashboard.
+   Open `http://localhost:5173` in your browser to view the dashboard.
 
 ---
 
@@ -128,3 +119,11 @@ The application uses `react-beautiful-dnd` for implementing drag-and-drop functi
 
 - The user management (invite, user icons) is hardcoded with mock data for the purpose of UI replication.
 - Only task name, description, and priority are dynamically managed in this implementation.
+
+---
+
+## Video Demonstration
+
+You can view a video demonstration of the project here:
+[Video Link](https://drive.google.com/file/d/1wrLHIzZh0fXI9bDzpd8FgE5UjrC3BVFg/view?usp=drive_link)
+
